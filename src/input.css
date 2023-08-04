@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@500;600;700&display=swap'); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .section-min-height {
+    min-height: calc(100vh - 68px);
+  }
+
+  .toggle-btn {
+    @apply [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div]:rotate-[720deg] [&>div]:bg-transparent;
+  }
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Give default styles to some tags */
+body {
+  @apply font-open text-base font-normal text-gray-secondary;
+}
+
+h1 {
+  @apply text-3xl font-bold uppercase text-black-primary md:text-5xl;
+}
+
+h2 {
+  @apply text-2xl font-semibold text-black-primary md:text-3xl;
+}
+
+h3 {
+  @apply text-xl font-medium md:text-2xl;
+}
+
+.active {
+  @apply border-r-4 border-orange-500 pr-3 text-white;
+}
+
+/* Zoom in effect for the project Images */
+/* .hover a img {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+} */
+
+/* .hover a:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+} */
