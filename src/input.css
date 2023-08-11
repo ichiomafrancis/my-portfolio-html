@@ -16,12 +16,6 @@
   }
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
-
 /* Give default styles to some tags */
 body {
   @apply font-open text-base font-normal text-gray-secondary;

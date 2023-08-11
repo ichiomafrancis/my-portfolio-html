@@ -569,17 +569,16 @@ video {
   margin-bottom: 2.5rem;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .-mt-0{
   margin-top: -0px;
 }
 
 .-mt-0\.5{
   margin-top: -0.125rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
 }
 
 .mb-2{
@@ -662,14 +661,6 @@ video {
   height: 2rem;
 }
 
-.h-full{
-  height: 100%;
-}
-
-.h-screen{
-  height: 100vh;
-}
-
 .min-h-screen{
   min-height: 100vh;
 }
@@ -728,16 +719,12 @@ video {
   cursor: pointer;
 }
 
-.scroll-mt-40{
-  scroll-margin-top: 10rem;
-}
-
-.scroll-mt-20{
-  scroll-margin-top: 5rem;
-}
-
 .scroll-mt-16{
   scroll-margin-top: 4rem;
+}
+
+.scroll-mt-40{
+  scroll-margin-top: 10rem;
 }
 
 .flex-col{
@@ -782,6 +769,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded{
@@ -935,12 +926,6 @@ video {
 .duration-500{
   transition-duration: 500ms;
 }
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 /* Give default styles to some tags */
 
@@ -1118,18 +1103,6 @@ h3{
   transition-duration: 500ms;
 }
 
-.hover\:pr-3:hover{
-  padding-right: 0.75rem;
-}
-
-.hover\:opacity-90:hover{
-  opacity: 0.9;
-}
-
-.hover\:opacity-50:hover{
-  opacity: 0.5;
-}
-
 .hover\:opacity-70:hover{
   opacity: 0.7;
 }
@@ -1140,17 +1113,11 @@ h3{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.focus\:text-white:focus{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.active\:text-white:active{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 @media (min-width: 640px){
+  .sm\:flex{
+    display: flex;
+  }
+
   .sm\:h-20{
     height: 5rem;
   }
@@ -1159,12 +1126,8 @@ h3{
     width: 5rem;
   }
 
-  .sm\:scroll-mt-0{
-    scroll-margin-top: 0px;
-  }
-
-  .sm\:scroll-smooth{
-    scroll-behavior: smooth;
+  .sm\:justify-between{
+    justify-content: space-between;
   }
 }
 
@@ -1181,8 +1144,8 @@ h3{
     width: 6rem;
   }
 
-  .md\:scroll-mt-0{
-    scroll-margin-top: 0px;
+  .md\:justify-end{
+    justify-content: flex-end;
   }
 
   .md\:justify-between{
