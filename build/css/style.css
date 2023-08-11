@@ -727,14 +727,6 @@ video {
   scroll-margin-top: 10rem;
 }
 
-.scroll-mt-60{
-  scroll-margin-top: 15rem;
-}
-
-.scroll-mt-20{
-  scroll-margin-top: 5rem;
-}
-
 .flex-col{
   flex-direction: column;
 }
@@ -935,6 +927,28 @@ video {
   transition-duration: 500ms;
 }
 
+/* .btn {
+    @apply [absolute top-4 -mt-0.5 h-1 w-8 rounded bg-white transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-white before:transition-all before:duration-500 before:content-[&quot;&quot;] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-white after:transition-all after:duration-500 after:content-[&quot;&quot;]];
+  } */
+
+.toggle-btn>div::after{
+  --tw-translate-y: 0px;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.toggle-btn>div::before{
+  --tw-translate-y: 0px;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.toggle-btn>div{
+  --tw-rotate: 720deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-color: transparent;
+}
+
 /* Give default styles to some tags */
 
 body{
@@ -1122,20 +1136,12 @@ h3{
 }
 
 @media (min-width: 640px){
-  .sm\:flex{
-    display: flex;
-  }
-
   .sm\:h-20{
     height: 5rem;
   }
 
   .sm\:w-20{
     width: 5rem;
-  }
-
-  .sm\:justify-between{
-    justify-content: space-between;
   }
 }
 
@@ -1150,10 +1156,6 @@ h3{
 
   .md\:w-24{
     width: 6rem;
-  }
-
-  .md\:justify-end{
-    justify-content: flex-end;
   }
 
   .md\:justify-between{
