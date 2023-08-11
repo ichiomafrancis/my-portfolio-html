@@ -731,6 +731,10 @@ video {
   scroll-margin-top: 15rem;
 }
 
+.scroll-mt-20{
+  scroll-margin-top: 5rem;
+}
+
 .flex-col{
   flex-direction: column;
 }
